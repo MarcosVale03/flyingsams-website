@@ -26,7 +26,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration:underline /* Underline links on hover */
+    color: #ff8c00; /* Highlight color on hover */
+    transform:scale(.2) /* Slightly enlarge the icon on hover */
 }
 
 body {
@@ -34,7 +35,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center; /* Center text alignment */
-    background-color: #f9f9f9; /* Light background color */
+    background-color: rgb(249, 199, 106); /* Light background color */
 }
 
 .chapter-container {
@@ -80,5 +81,6 @@ img {
 }
 
 h3, h4 {
+    color: #a02c2c;
     margin: 10px 0; /* Add space between lines */
 }
