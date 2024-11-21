@@ -1,0 +1,84 @@
+header {
+    background-color: rgb(142, 41, 41); /* Burgundy color */
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between; /* Distribute space between logo and nav */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add some padding around the header */
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items horizontally */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    font-size: 18px; /* Adjust font size */
+}
+
+nav ul li a:hover {
+    text-decoration:underline /* Underline links on hover */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use a clean font */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text alignment */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.chapter-container {
+    margin: 0 auto;
+    padding: 20px; /* Keep some padding for spacing */
+    background-color: transparent; /* Remove the white background */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove shadow effect */
+    width: 80%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #a02c2c; /* A softer burgundy color to match the header */
+    text-align: center;
+}
+
+.social_media_buttons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 30px; /* Space between icons */
+    margin: 20px 0; /* Add margin to separate from other content */
+}
+
+.social_media_buttons a {
+    font-size: 2.5rem; /* Larger icons */
+    color: #14213d; /* Dark navy for icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.social_media_buttons a:hover {
+    color: #ff8c00; /* Highlight color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+img {
+    margin: 20px 0; /* Space around the image */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+}
+
+h3, h4 {
+    margin: 10px 0; /* Add space between lines */
+}
