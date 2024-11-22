@@ -5,7 +5,7 @@ header {
     justify-content: space-between; /* Distribute space between logo and nav */
     align-items: center; /* Center items vertically */
     padding: 10px 20px; /* Add some padding around the header */
-    font-family: 'Poppins', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav ul {
@@ -83,4 +83,30 @@ img {
 h3, h4 {
     color: #a02c2c;
     margin: 10px 0; /* Add space between lines */
+}
+
+.checklist {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 20px auto;
+    text-align: left; /* Align items to the left */
+    max-width: 600px; /* Limit the width for better readability */
+}
+
+.checklist li {
+    display: flex;
+    align-items: center; /* Align checkmark and text vertically */
+    margin-bottom: 10px; /* Add spacing between list items */
+    font-size: 18px; /* Adjust text size */
+    line-height: 1.5; /* Improve text spacing */
+    color: #a02c2c; /* Text color */
+    font-family: 'Poppins', sans-serif;
+}
+
+.checklist .checkmark {
+    display: inline-block;
+    margin-right: 10px; /* Space between checkmark and text */
+    font-size: 20px; /* Size of the checkmark */
+    font-family: Arial, sans-serif; /* Consistent font for the checkmark */
+    color: #a02c2c; /* Black checkmark */
 }
