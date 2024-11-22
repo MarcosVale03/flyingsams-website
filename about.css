@@ -1,0 +1,140 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(249, 199, 106); /* Light background color */
+    color: #a02c2c;
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Header Styling */
+header {
+    
+    background-color: rgb(142, 41, 41); /* Burgundy color */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .club_logo img {
+    width: 80px; /* Adjust logo size for better fit */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+    transform: scale(1.1);
+}
+
+/* About Us Grid Layout - 3x2 Grid with alternating descriptions and images */
+.about-us-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Adjust spacing between elements */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Control max width for better layout */
+    align-items: center; /* Ensure items are vertically centered */
+}
+
+/* For descriptions */
+.about-us-description {
+    background-color: rgb(142, 41, 41); /* Burgundy color */
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-size: 14px; /* Slightly smaller font */
+    height: 200px; /* Set fixed height for description boxes */
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers the description box */
+}
+
+/* Titles for description boxes */
+.about-us-description h3 {
+    margin: 10px 0; /* Reduce spacing between title and content */
+    font-size: 16px; /* Adjust title font size */
+}
+
+/* Paragraphs inside description boxes */
+.about-us-description p {
+    font-size: 12px; /* Smaller text for readability */
+    line-height: 1.4; /* Tighten line spacing */
+}
+
+/* Icon Styling inside description boxes */
+.about-us-description i {
+    color: white; /* Icon color */
+    background-color: rgb(142, 41, 41); /* Match the box color */
+    border-radius: 50%; /* Circle background */
+    padding: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.about-us-image {
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image vertically */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.about-us-image img {
+    width: 100%; /* Scale down to fit container */
+    max-width: 500px; /* Increase max-width for larger images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to images */
+}
+
+/* Adjust layout on smaller screens */
+@media (max-width: 768px) {
+    .about-us-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 15px;
+    }
+
+    .about-us-description {
+        font-size: 12px;
+        height: auto; /* Allow height to adjust automatically on small screens */
+    }
+
+    .about-us-description h3 {
+        font-size: 16px;
+    }
+
+    .about-us-image img {
+        max-width: 400px; /* Reduce image size slightly on mobile */
+    }
+}
