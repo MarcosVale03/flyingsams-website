@@ -1,3 +1,12 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Use a clean font */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text alignment */
+    background-color: rgb(249, 199, 106); /* Light background color */
+    color: #a02c2c;
+}
+
 header {
     background-color: rgb(142, 41, 41); /* Burgundy color */
     display: flex;
@@ -5,7 +14,12 @@ header {
     justify-content: space-between; /* Distribute space between logo and nav */
     align-items: center; /* Center items vertically */
     padding: 10px 20px; /* Add some padding around the header */
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .club_logo img {
+    width: 100px; /* Set a fixed size for the logo */
+    height: 100px;
 }
 
 nav ul {
@@ -27,15 +41,8 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff8c00; /* Highlight color on hover */
-    transform:scale(.2) /* Slightly enlarge the icon on hover */
-}
-
-body {
-    font-family: 'Poppins', sans-serif; /* Use a clean font */
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Center text alignment */
-    background-color: rgb(249, 199, 106); /* Light background color */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
 .chapter-container {
@@ -85,12 +92,18 @@ h3, h4 {
     margin: 10px 0; /* Add space between lines */
 }
 
+/* Updated checklist section for "How do I become an official Flying Sams Member?" */
 .checklist {
     list-style: none; /* Remove default bullet points */
     padding: 0;
     margin: 20px auto;
     text-align: left; /* Align items to the left */
     max-width: 600px; /* Limit the width for better readability */
+    border: 2px solid #d9d9d9; /* Light gray border */
+    border-radius: 8px; /* Rounded corners for the border */
+    padding: 20px; /* Space inside the border */
+    background-color: #ffffff; /* White background for clarity */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .checklist li {
@@ -99,7 +112,7 @@ h3, h4 {
     margin-bottom: 10px; /* Add spacing between list items */
     font-size: 18px; /* Adjust text size */
     line-height: 1.5; /* Improve text spacing */
-    color: #a02c2c; /* Text color */
+    color: black; /* Dark gray for text for readability */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -108,5 +121,33 @@ h3, h4 {
     margin-right: 10px; /* Space between checkmark and text */
     font-size: 20px; /* Size of the checkmark */
     font-family: Arial, sans-serif; /* Consistent font for the checkmark */
-    color: #a02c2c; /* Black checkmark */
+    color: #a02c2c; /* Burgundy checkmark */
+    
+}
+
+/* Updated FAQ section */
+.faq-container {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.faq {
+    background-color: #ffffff; /* White background for clarity */
+    border: 2px solid #d9d9d9; /* Light gray border */
+    border-radius: 8px; /* Rounded corners for the border */
+    padding: 20px; /* Space inside the border */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.faq-q {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Dark gray for question text */
+    margin-bottom: 10px;
+}
+
+.faq-a {
+    font-size: 16px;
+    color: #666; /* Lighter gray for answer text */
+    margin-bottom: 15px;
 }
