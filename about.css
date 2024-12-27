@@ -1,0 +1,120 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(249, 199, 106); /* Light background color */
+    color: #a02c2c;
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Header Styling */
+header {
+    background-color: rgb(142, 41, 41); /* Burgundy color */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px; /* Matches index.html */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .club_logo img {
+    border-radius: 50%; /* Makes the logo rounded */
+    width: 100px;      /* Matches the size in index.html */
+    height: 100px;     /* Matches the size in index.html */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+    transform: scale(1.1);
+}
+
+/* About Us Grid Layout */
+.about-us-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    padding: 100px;
+    margin: 0 auto;
+    max-width: 1200px; /* Control max width */
+    align-items:center; /* Vertically center grid items */
+}
+
+.about-us-description {
+    background-color: rgb(142, 41, 41); /* Burgundy color */
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-size: 14px;
+    height: 200px; /* Fixed height */
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-description h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.about-us-description p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.about-us-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-image img {
+    width: 100%; /* Scale down to fit container */
+    max-width: 500px; /* Control max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Adjust layout on smaller screens */
+@media (max-width: 768px) {
+    .about-us-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 15px;
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .about-us-description {
+        font-size: 12px;
+        height: auto;
+    }
+
+    .about-us-image img {
+        max-width: 400px; /* Smaller image size */
+    }
+}

@@ -1,0 +1,171 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(249, 199, 106); /* Light background color */
+    color: #a02c2c;
+    line-height: 1.6; /* Improve text readability */
+}
+
+header {
+    background-color: rgb(142, 41, 41); /* Burgundy color */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px; /* Matches index.html */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .club_logo img {
+
+    border-radius: 50%; /* Makes the logo rounded */
+    width: 100px;      /* Matches the size in index.html */
+    height: 100px;     /* Matches the size in index.html */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+    transform: scale(1.1);
+}
+
+.chapter-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    width: 90%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #a02c2c;
+    text-align: center;
+}
+
+.social_media_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.social_media_buttons a {
+    font-size: 2.5rem;
+    color: #14213d;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social_media_buttons a:hover {
+    color: #ff8c00;
+    transform: scale(1.2);
+}
+
+img {
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+h3, h4 {
+    color: #a02c2c;
+    margin: 10px 0;
+}
+
+/* Checklist Styles */
+.checklist {
+    list-style: none; /* Remove bullet points */
+    padding: 20px; /* Add spacing inside the box */
+    margin: 20px auto;
+    max-width: 600px; /* Limit width for readability */
+    text-align: left; /* Align text to the left */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6; /* Ensure good text spacing */
+    background-color: #ffffff; /* White background for clarity */
+    border: 2px solid #d9d9d9; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.checklist li {
+    display: flex; /* Align checkmark and text horizontally */
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 15px; /* Add space between list items */
+}
+
+.checkmark {
+    
+    font-size: 24px; /* Slightly larger size for checkmark */
+    margin-right: 10px; /* Space between checkmark and text */
+    line-height: 1; /* Align the checkmark with the text */
+}
+
+.checklist span {
+    color: black; /* Text color for the items */
+    font-weight: bold; /* Bold text for readability */
+}
+
+.checklist a {
+    color: #a02c2c; /* Distinct clickable blue color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold to stand out */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.checklist a:hover {
+    color: #ff8c00; /* Highlight orange color on hover */
+}
+
+
+
+.faq-container {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.faq {
+    background-color: #ffffff;
+    border: 2px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-q {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-a {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}

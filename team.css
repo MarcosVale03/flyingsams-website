@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(249, 199, 106); /* Light background color */
+    color: #a02c2c;
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Header Styling */
+header {
+    background-color: rgb(142, 41, 41); /* Burgundy color */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .club_logo img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+    transform: scale(1.1);
+}
+
+/* Team Section */
+h1 {
+    color: rgb(142, 41, 41); /* Burgundy color */
+    margin: 20px 0;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.officer {
+    background-color: rgb(142, 41, 41); /* Burgundy color */
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.officer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.officer img {
+    width: 190px; /* Increased size */
+    height: 190px; /* Increased size */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #ff8c00; /* Slightly thicker border */
+}
+
+.officer h2 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #ff8c00; /* Accent color */
+}
+
+.officer h3 {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.officer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-container {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+
+    .officer img {
+        width: 140px; /* Adjust image size for smaller screens */
+        height: 140px;
+    }
+}
